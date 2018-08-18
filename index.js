@@ -12,6 +12,7 @@ function getIssues() {
 }
 
 function showIssues(json) {
+  $("#issues").append(`<h4>Issues</h4><a href ="${json.html_url}">${json.title}</a>`)
 }
 
 function createIssue() {
