@@ -1,6 +1,14 @@
 const fork = 'https://github.com/alyssaswatson/js-ajax-fetch-lab-v-000'
 
 function getIssues() {
+  fetch(`${fork}/issues`, {
+  })
+    .then(res => res.json())
+    .then(data => {
+      for (let i = 0; i < data.length; i++){
+        displayIssue(new Issue(data[i]));
+      }
+    });
 }
 
 function showIssues(json) {
