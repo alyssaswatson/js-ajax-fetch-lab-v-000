@@ -1,4 +1,4 @@
-const fork = 'https://github.com/alyssaswatson/js-ajax-fetch-lab'
+const fork = 'https://github.com/alyssaswatson/javascript-fetch-lab'
 
 function getIssues() {
   fetch(`${fork}/issues`, {
